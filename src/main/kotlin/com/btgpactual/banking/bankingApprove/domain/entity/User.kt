@@ -1,6 +1,6 @@
 package com.btgpactual.banking.bankingApprove.domain.entity
 
-data class UserApprover (
+data class User (
     val id: Long,
     val name: String,
     val login: String,

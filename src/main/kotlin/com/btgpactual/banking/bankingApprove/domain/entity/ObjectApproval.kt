@@ -5,5 +5,5 @@ data class ObjectApproval (
     val systemRequestedApproval: SystemRequestedApproval,
     val categoryObjectApprovalList: List<CategoryObjectApproval>,
     val name: String,
-    val approverTypeList: List<ApproverType>
+    val approverRoleList: List<ApproverRole>
 )

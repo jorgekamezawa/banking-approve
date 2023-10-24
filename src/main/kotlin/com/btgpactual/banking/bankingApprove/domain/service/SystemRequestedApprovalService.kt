@@ -3,7 +3,9 @@ package com.btgpactual.banking.bankingApprove.domain.service
 import com.btgpactual.banking.bankingApprove.domain.entity.SystemRequestedApproval
 import com.btgpactual.banking.bankingApprove.domain.repository.InterfaceSystemRequestedApprovalDatabaseRepository
 import com.btgpactual.banking.bankingApprove.domain.service.`interface`.InterfaceSystemRequestedApprovalService
+import org.springframework.stereotype.Service
 
+@Service
 class SystemRequestedApprovalService(
     private val systemRequestedApprovalDatabaseRepository: InterfaceSystemRequestedApprovalDatabaseRepository
 ) : InterfaceSystemRequestedApprovalService {

@@ -11,12 +11,21 @@ data class SystemRequestedApprovalEntity(
     @Column(name = "id")
     val id: Long,
     @Column(name = "name")
-    val name: String
+    val name: String,
+    @Column(name = "url")
+    val url: String
 )
 
-fun SystemRequestedApprovalEntity.toDomain(): SystemRequestedApproval {
-    return SystemRequestedApproval(
+fun SystemRequestedApprovalEntity.toDomain(): SystemRequestedApproval =
+    SystemRequestedApproval(
         id = id,
-        name = name
+        name = name,
+        url = url
     )
-}
+
+fun SystemRequestedApproval.toEntity(): SystemRequestedApprovalEntity =
+    SystemRequestedApprovalEntity(
+        id = id,
+        name = name,
+        url = url
+    )
